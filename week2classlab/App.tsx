@@ -2,8 +2,15 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, ScrollView, Image, ActivityIndicator, View, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
-const CounterOne = ({ initialCount }) => {
-    const [count, setCount] = useState(initialCount);
+interface CounterOneProps {
+    initialCount: number;
+}
+ interface CounterTwoProps{
+    initialCount:number;
+ }
+
+const CounterOne = (props: CounterOneProps) => {
+    const [count, setCount] = useState(props.initialCount);
 
     return (
         <View style={styles.counterContainer}>
@@ -13,8 +20,8 @@ const CounterOne = ({ initialCount }) => {
     );
 };
 
-const CounterTwo = ({ initialValue }) => {
-    const [value, setValue] = useState(initialValue);
+const CounterTwo = (props: CounterTwoProps) => {
+    const [value, setValue] = useState(props.initialCount);
 
     return (
         <View style={styles.counterContainer}>
