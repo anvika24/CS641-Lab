@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import CustomButton from '../components/CustomButton';  // Import the button component
+import CustomButton from '../components/CustomButton';  
 
 const WelcomePage = ({ navigation }: any) => {
   return (
