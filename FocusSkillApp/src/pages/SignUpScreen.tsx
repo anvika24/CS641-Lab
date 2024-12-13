@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, Text, StyleSheet } from 'react-native';
-import auth from '@react-native-firebase/auth';  // Firebase Authentication
+import auth from '@react-native-firebase/auth';  
 
 const SignUpScreen = ({ navigation }: any) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  // Validate email and password fields
+  
   const validateInputs = () => {
     if (!email || !password) {
       setError('Please fill in both fields.');
@@ -21,13 +21,13 @@ const SignUpScreen = ({ navigation }: any) => {
   };
 
   const handleSignUp = async () => {
-    if (!validateInputs()) return; // Prevent submission if validation fails
+    if (!validateInputs()) return; 
 
     try {
       await auth().createUserWithEmailAndPassword(email, password);
-      navigation.navigate('Home');  // Navigate to Home after successful sign-up
+      navigation.navigate('Home');  
     } catch (e:any) {
-      setError(e?.message|| 'An unkown error occured.');  // Display error message
+      setError(e?.message|| 'An unkown error occured.');  
     }
   };
 
