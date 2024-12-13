@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import WelcomePage from '../pages/WelcomePage';
 import SkillSelectionPage from '../pages/SkillSelectionPage';
 import HomePage from '../pages/HomePage';
-import 'react-native-gesture-handler'; // Ensure this is included in the entry file
+import 'react-native-gesture-handler';
 
 const Tab = createBottomTabNavigator();
 
