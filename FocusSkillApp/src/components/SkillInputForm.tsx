@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, StyleSheet, Text } from 'react-native';
-import { Picker } from '@react-native-picker/picker';  // Update the import
+import { Picker } from '@react-native-picker/picker';  
 
 
 interface SkillInputFormProps {
