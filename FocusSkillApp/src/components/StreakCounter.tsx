@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 interface StreakCounterProps {
-  streakCount: number; // Number of consecutive days practiced
+  streakCount: number; 
 }
 
 const StreakCounter: React.FC<StreakCounterProps> = ({ streakCount }) => {
