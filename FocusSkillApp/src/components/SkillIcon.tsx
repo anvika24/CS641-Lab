@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 
 interface SkillIconProps {
-  skillImage: string; // URL or local image path
+  skillImage: string; 
 }
 
 const SkillIcon: React.FC<SkillIconProps> = ({ skillImage }) => {
